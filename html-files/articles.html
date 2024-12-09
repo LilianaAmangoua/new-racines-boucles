@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+
+    <link rel="stylesheet" href="/src/style.css">
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-white">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-my-fuschia hover:bg-my-fuschia hover:text-my-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex shrink-0 items-center">
+                <img class="h-5 w-auto text-fuschia" src="/images/logos/logo-racines-boucles-light-pink.png" alt="Your Company">
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <a href="/index.html" class="rounded-md px-3 py-2 text-sm font-medium text-my-black hover:bg-my-fuschia hover:text-my-white hover:px-3 hover:py-2" aria-current="page">Accueil</a>
+                  <a href="/html-files/articles.html" class="rounded-md px-3 py-2 text-sm font-medium text-my-black hover:bg-my-fuschia hover:text-my-white hover:px-3 hover:py-2">Articles</a>
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-my-black hover:bg-my-fuschia hover:text-my-white hover:px-3 hover:py-2">A propos</a>
+                  <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-my-black hover:bg-my-fuschia hover:text-my-white hover:px-3 hover:py-2">Contact</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-my-black hover:bg-my-fuschia hover:text-my-white" aria-current="page">Accueil</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-my-black hover:bg-my-fuschia hover:text-my-white">Articles</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-my-black hover:bg-my-fuschia hover:text-my-white">A propos</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-my-black hover:bg-my-fuschia hover:text-my-white">Contact</a>
+          </div>
+        </div>
+    </nav>
+
+
+    <section class="flex justify-around my-2 articles-section">
+
+        <article class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg w-3/12">
+          <img
+            alt=""
+            src="/images/accueil/bakari-mustafa-LO6pr8IVXVI-unsplash.jpg"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+        
+          <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+            <div class="p-4 sm:p-6">
+              <time datetime="2022-10-10" class="block text-xs text-white/90"> 10th Oct 2022 </time>
+        
+              <a href="#">
+                <h3 class="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+              </a>
+        
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+                atque dignissimos. Molestias explicabo corporis voluptatem?
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg w-3/12">
+          <img
+            alt=""
+            src="/images/accueil/etty-fidele-2axKVyMxZxE-unsplash.jpg"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+        
+          <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+            <div class="p-4 sm:p-6">
+              <time datetime="2022-10-10" class="block text-xs text-white/90"> 10th Oct 2022 </time>
+        
+              <a href="#">
+                <h3 class="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+              </a>
+        
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+                atque dignissimos. Molestias explicabo corporis voluptatem?
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg w-3/12">
+          <img
+            alt=""
+            src="/images/accueil/jessica-felicio-kgv0t4pI1T4-unsplash.jpg"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+        
+          <div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+            <div class="p-4 sm:p-6">
+              <time datetime="2022-10-10" class="block text-xs text-white/90"> 10th Oct 2022 </time>
+        
+              <a href="#">
+                <h3 class="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+              </a>
+        
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+                atque dignissimos. Molestias explicabo corporis voluptatem?
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+
+
+
+    <!-- Footer -->
+
+
+    <footer class="bg-my-white">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-my-black">© 2024 <a href="https://flowbite.com/" class="hover:underline">Racines & Boucles™</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap justify-evenly items-center w-4/12 mt-3 text-sm font-medium text-my-fuschia sm:mt-0">
+            <li>
+                <a href="/index.html" class="hover:bg-my-fuschia hover:text-my-white hover:px-3 hover:py-2 hover:rounded-md me-4 md:me-6">Accueil</a>
+            </li>
+            <li>
+                <a href="/html-files/articles.html" class="hover:bg-my-fuschia hover:text-my-white hover:px-3 hover:py-2 hover:rounded-md me-4 md:me-6">Articles</a>
+            </li>
+            <li>
+                <a href="#" class="hover:bg-my-fuschia hover:text-my-white hover:px-3 hover:py-2 hover:rounded-md me-4 md:me-6">A propos</a>
+            </li>
+            <li>
+                <a href="#" class="hover:bg-my-fuschia hover:text-my-white hover:px-3 hover:py-2 hover:rounded-md">Contact</a>
+            </li>
+        </ul>
+        </div>
+      </footer>
+
+    
+</body>
+</html>
