@@ -28,7 +28,7 @@ module.exports = {
         'my-black' : '#3c3c3c',
         'my-white' : '#f8f8f8',
         'my-fuschia' : '#FF00A8',
-        'light-pink' : '#FFC1CC',
+        'light-pink' : 'rgba(255, 193, 204, 0.39)',
       }
     },
   },
